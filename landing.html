@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+
+    <title>Работаем с Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">1/3</div>
+            <div class="col">2/3</div>
+            <div class="col">3/3</div>
+            <div class="row">
+                <!--Адаптивный блок Bootstrap-->
+                <div class="col-12 col-sm-9 col-md-7 col-lg-5 col-xl-3">Контент</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="text-start">Текст выравнивается по левому краю</p>
+            <p class="text-center">Текст выравнивается по центру</p>
+            <p class="text-end">Текст выравнивается по правому краю</p>
+            <p class="text-sm-srart">Текст выравнивается по левому краю SM</p>
+            <p class="fs-3">Текст по размеру h3</p>
+            <p class="fs-2 fw-bold fst-italic">Жирный курсивный текст по размеру h2</p>
+            <div class="col-2 bg-success text-warning">1(6 колонок)</div>
+            <div class="col-8 bg-warning text-dark">2(6 колонок)</div>
+            <div class="col-6 bg-danger text-white">3(12 колонок)</div>
+            <div class="col-8 bg-info text-primary">4(8 колонок)</div>
+            <div class="col-8 bg-secondary text-white">4(8 колонок)</div>
+            <div class="col-12 bg-warning bg-opacity-25 text-white">5(12 колонок)</div>
+            <div class="col-6 border">Границы вокруг</div>
+            <div class="col-6 border border-top-0">Границы сверху нет</div>
+            <div class="w-100"></div>
+            <div class="col-6 border border-primary">Границы вокруг</div>
+            <div class="col-6 border border-danger border-end-0">Границы справа нет</div>
+            <div class="col-4 ms-auto me-3 bg-success" style="height: 200px;"></div>
+            <div class="col-4 me-auto ms-3 bg-danger" style="height: 200px;"></div>
+        </div>
+        <div class="row">
+            <div class="w-25 p-3" style="background-color: #ffb6c1;">25%</div>
+            <div class="w-50 p-3" style="background-color:rgb(255,105,180)">50%</div>
+            <div class="w-75 p-3" style="background-color: rgb(255,20, 147)">75%</div>
+            <div class="w-100 p-3" style="background-color:#c71585">100%</div>
+            <div style="height:100px; background-color: rgba(255,0,0,0.1);">
+                <div class="h-25 bg-info d-inline-block" style="width: 120px;">Высота 25%</div>
+                <div class="h-50 bg-info d-inline-block" style="width: 120px;">Высота 50%</div>
+                <div class="h-75 bg-info d-inline-block" style="width: 120px;">Высота 75%</div>
+                <div class="h-100 bg-info d-inline-block" style="width: 120px;">Высота 100%</div>
+                <div class="h-auto bg-info d-inline-block" style="width: 120px;">Высота авто</div>
+
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">1.1</div>
+            <div class="col">1.2</div>
+            <div class="d-block d-md-none w-100"></div>
+            <div class="col">2.1</div>
+            <div class="col">2.2</div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 d-none d-xl-block">L</div>
+            <div class="col-md-8 col-xl-6">M</div>
+            <div class="col-md-4 col-xl-3">R</div>
+        </div>
+        <div class="row">
+            <div class="col">Колонка 1</div>
+            <div class="col-md-auto">Колонка 2:"резиновая" на md,lg b xl</div>
+            <div class="col col-lg-2">Колонка 3</div>
+        </div>
+        <div class="row">
+            <div class="col-3 overflow-auto">Переполнение атоматом</div>
+            <div class="col-3 overflow-hidden">Переполнение overflow-hidden </div>
+            <div class="col-3 overflow-visible">Переполнение overflow-visible</div>
+            <div class="col-3 overflow-scroll">Переполнение overflow-scroll</div>
+            <div class="class position-absolute top-0 start-0"></div>
+            <div class="class position-absolute top-0 end-0"></div>
+            <div class="class position-absolute top-50 start-50"></div>
+            <div class="class position-absolute bottom-50 end-50"></div>
+            <div class="class position-absolute bottom-0 start-0"></div>
+            <div class="class position-absolute bottom-0 end-0"></div>
+        </div>
+
+    </div>
+    <div class="container">
+        <i class="fa-solid fa-envelope"></i>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <ul class="list-inline">
+                <li class="list-inline-item">Главная</li>
+                <li class="list-inline-item">О нас</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ab repellendus aspernatur ipsam id delectus
+        cumque incidunt, quae quis magni tenetur porro. Nihil earum cupiditate ipsum perferendis, minima tempora nisi
+        provident. Alias laudantium facilis tempora temporibus quibusdam expedita deserunt voluptatum!<img
+            src="images/python.png" class="rounded float-end" alt="Питон">
+    </div>
+    <form>
+        <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Эл. адрес</label>
+            <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Пароль</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword">
+            </div>
+        </div>
+    </form>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Меню</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Рекомендуемые</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Цена</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../pythonProject/images/python.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pythonProject/images/python.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../pythonProject/images/python.png" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

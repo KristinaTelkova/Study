@@ -1,0 +1,135 @@
+section,
+header,
+nav,
+article,
+aside,
+footer {
+   display: block;
+}
+
+.left,
+.content {
+   position: absolute;
+   overflow: auto;
+   padding: 10px;
+}
+
+.header {
+   height: 80px;
+   background-color: blanchedalmond;
+   border-bottom: 2 px solid #c46c08;
+}
+
+.header h1 {
+   margin: 0;
+   padding: 20px;
+   text-align: center;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 24pt;
+}
+
+.content {
+   top: 82px;
+   left: 180px;
+   bottom: 0;
+   right: 0;
+}
+
+.left {
+   width: 150px;
+   background-color: #bad6e0;
+   border-right: 1 px solid #6e52e9;
+
+}
+
+footer {
+   position: absolute;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   background-color: bisque;
+   padding: 20px;
+   text-align: center;
+}
+
+.block {
+   background-color: azure;
+   position: relative;
+   top: 20px;
+   left: 50px;
+}
+
+.menu {
+
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   border: 2px solid #6e52e9;
+   background-color: #33adef;
+}
+
+.menu a {
+   background-color: rgb(247, 200, 140);
+   color: #777;
+   font-weight: 900;
+   border-left: 5px solid #33adef;
+   display: block;
+   border-bottom: 1px solid;
+}
+
+.menu li {
+   padding: 1px;
+   display: inline;
+}
+
+.menu a:hover {
+   background-color: yellow;
+   color: red;
+   border-left: 5px solid #3333ff;
+}
+
+.container {
+   display:flex;
+   justify-content: center;
+   border: 2px solid #33adef;
+}
+
+.content-block {
+   border:2px solid #777;
+}
+
+.content-block-auto {
+   width: 200px;
+   background-color: #896fe9;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+.container-inline {
+   text-align: center;
+   border: 2px solid blue;
+}
+
+.content-inline-block{
+   display:inline-block;
+   border: 2px solid red;
+}
+
+.rounded{
+   border: 2px solid #33adef;
+   border-radius: 10px;
+   box-shadow: 20px 1px 50px #896fe9;
+}
+
+.on-bg{
+   /*background-image: url("../images/python.png");*/
+   height: 200px;
+   background-color: rgba(255,128,64,.99);
+   background-repeat: repeat-x;
+}
+
+.on-gradient{
+   background: linear-gradient(to left,#44cff8,#fff);
+   height: 200px;
+}
